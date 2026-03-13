@@ -1,10 +1,12 @@
-
+import 'bootstrap/dist/js/bootstrap.bundle.min.js'
+import 'bootstrap-icons/font/bootstrap-icons.css'
+import { RouterProvider } from 'react-router-dom'
+import router from './routes'
 
 function App() {
-
   return (
     <>
-      <p>首頁測試</p>
+      <RouterProvider router={router} />
     </>
   )
 }
