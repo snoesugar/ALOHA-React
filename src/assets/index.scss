@@ -1,0 +1,71 @@
+/* 標題專用設定 */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800; /* 這對應了你設計稿的 weight-800 */
+}
+
+/* ----- home ----- */
+.swiper-slide {
+  img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    display: block; // 移除圖片下方常見的 4px 空隙
+  }
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); // 0.3 代表 30% 透明度的黑色
+  z-index: 1 // 確保在圖片上方
+}
+
+/* ALOHA 風格自定義箭頭 */
+/* 標題專用設定 */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800; /* 這對應了你設計稿的 weight-800 */
+}
+
+/* ----- home ----- */
+.swiper-slide {
+  img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    display: block; // 移除圖片下方常見的 4px 空隙
+  }
+}
+
+/* ALOHA 風格自定義箭頭 */
+.swiper-button-next-aloha,
+.swiper-button-prev-aloha {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.swiper-button-next-aloha:hover,
+.swiper-button-prev-aloha:hover {
+  transform: scale(1.1) translateY(-50%);
+}
+
+.swiper-button-next-aloha { 
+  top: 235px;
+  right: calc(50% - 121px - 300px);
+  }
+.swiper-button-prev-aloha { 
+  top: 235px;
+  left: calc(50% - 121px - 300px);
+  }
