@@ -298,7 +298,7 @@ $cyans: (
 // fusv-enable
 
 // scss-docs-start theme-color-variables
-$primary:       $blue !default;
+$primary:       #6C51E2;//$blue !default; custom
 $secondary:     $gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
@@ -307,6 +307,11 @@ $danger:        $red !default;
 $light:         $gray-100 !default;
 $dark:          $gray-900 !default;
 // scss-docs-end theme-color-variables
+
+//custom
+$black-0: #F1F0F8;
+$black-10: #00000061;
+$black-20: #00000099;
 
 // scss-docs-start theme-colors-map
 $theme-colors: (
@@ -317,7 +322,10 @@ $theme-colors: (
   "warning":    $warning,
   "danger":     $danger,
   "light":      $light,
-  "dark":       $dark
+  "dark":       $dark,
+  "black-0": #F1F0F8,
+  "black-10": #00000061,
+  "black-20": #00000099,
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -350,7 +358,7 @@ $success-border-subtle:   tint-color($success, 60%) !default;
 $info-border-subtle:      tint-color($info, 60%) !default;
 $warning-border-subtle:   tint-color($warning, 60%) !default;
 $danger-border-subtle:    tint-color($danger, 60%) !default;
-$light-border-subtle:     $gray-200 !default;
+$light-border-subtle:     $black-0;//$gray-200 !default; custom
 $dark-border-subtle:      $gray-500 !default;
 // scss-docs-end theme-border-subtle-variables
 
@@ -410,11 +418,12 @@ $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
 $spacer: 1rem !default;
 $spacers: (
   0: 0,
-  1: $spacer * .25,
-  2: $spacer * .5,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
+  1: $spacer * .25,  //4px
+  2: $spacer * .5,   //8px
+  3: $spacer,        //16px
+  4: $spacer * 1.5,  //24px
+  5: $spacer * 2,  //32px custom
+  6: $spacer * 3,    //48px
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -683,7 +692,7 @@ $small-font-size:             .875em !default;
 $sub-sup-font-size:           .75em !default;
 
 // fusv-disable
-$text-muted:                  var(--#{$prefix}secondary-color) !default; // Deprecated in 5.3.0
+$text-muted:                  $black-10;//var(--#{$prefix}secondary-color) !default; // Deprecated in 5.3.0 custom
 // fusv-enable
 
 $initialism-font-size:        $small-font-size !default;

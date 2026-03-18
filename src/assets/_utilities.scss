@@ -804,3 +804,84 @@ $utilities: map-merge(
   ),
   $utilities
 );
+
+// Utilities API 新增
+$utilities: map-merge(
+  $utilities,
+  (
+    "height": (
+      property: height,
+      class: h,
+      values: (
+        25: 25%,
+        50: 50%,
+        75: 75%,
+        100: 100%,
+        auto: auto
+      )
+    ),
+    "width": (
+      property: width,
+      class: w,
+      values: (
+        25: 25%,
+        50: 50%,
+        75: 75%,
+        100: 100%,
+        auto: auto
+      )
+    ),
+    "rounded": (
+      property: border-radius,
+      class: rounded,
+      values: (
+        null: var(--#{$prefix}border-radius),
+        0: 0,
+        1: var(--#{$prefix}border-radius-sm),      //4px
+        2: var(--#{$prefix}border-radius),         //6px
+        3: var(--#{$prefix}border-radius-lg),      //8px
+        4: var(--#{$prefix}border-radius-xl),      //12px
+        5: var(--#{$prefix}border-radius-xxl),     //16px
+        6: var(--#{$prefix}border-radius-3xl),     //24px
+        7: var(--#{$prefix}border-radius-4xl),     //32px
+        8: var(--#{$prefix}border-radius-5xl),     //100px
+        20: 20px,                                  //custom
+        40: 40px,                                  //custom 
+        circle: 50%,
+        pill: var(--#{$prefix}border-radius-pill)
+      )
+    ),
+    "rounded-top-right": (
+      property: border-top-right-radius,
+      class: rounded-top-right,
+      values: (
+        null: var(--#{$prefix}border-radius),
+        0: 0,
+        1: var(--#{$prefix}border-radius-sm),      //4px
+        2: var(--#{$prefix}border-radius),         //6px
+        3: var(--#{$prefix}border-radius-lg),      //8px
+        4: var(--#{$prefix}border-radius-xl),      //12px
+        5: var(--#{$prefix}border-radius-xxl),     //16px
+        6: var(--#{$prefix}border-radius-3xl),     //24px
+        7: var(--#{$prefix}border-radius-4xl),     //32px
+        8: var(--#{$prefix}border-radius-5xl),     //100px
+      )
+    ),
+    "rounded-bottom-right": (
+      property: border-bottom-right-radius,
+      class: rounded-bottom-right,
+      values: (
+        null: var(--#{$prefix}border-radius),
+        0: 0,
+        1: var(--#{$prefix}border-radius-sm),   
+        2: var(--#{$prefix}border-radius),         //6px
+        3: var(--#{$prefix}border-radius-lg),      //8px
+        4: var(--#{$prefix}border-radius-xl),      //12px
+        5: var(--#{$prefix}border-radius-xxl),     //16px
+        6: var(--#{$prefix}border-radius-3xl),     //24px
+        7: var(--#{$prefix}border-radius-4xl),     //32px
+        8: var(--#{$prefix}border-radius-5xl),     //100px
+      )
+    ),
+  )
+);

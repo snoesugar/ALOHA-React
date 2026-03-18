@@ -11,14 +11,22 @@ i18n
     resources: {
       en: {
         translation: {
+          // Navbar
           "sign-up": "Sign up",
-          "login": "Login"
+          "login": "Login",
+          // Home
+          "SEARCH": "SEARCH",
+          "Destination": "Destination",
         }
       },
       zh: {
         translation: {
+          // Navbar
           "sign-up": "註冊",
-          "login": "登入"
+          "login": "登入",
+          // Home
+          "SEARCH": "搜尋",
+          "Destination": "位置",
         }
       }
     },
