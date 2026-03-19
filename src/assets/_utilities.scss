@@ -885,3 +885,25 @@ $utilities: map-merge(
     ),
   )
 );
+
+// 自訂義背景色
+$utilities: map-merge(
+  $utilities,
+  (
+    "background-color": (
+      property: background-color,
+      class: bg,
+      local-vars: (
+        "bg-opacity": 1
+      ),
+      values: map-merge(
+        $utilities-bg-colors,
+        (
+          "black-0": #F1F0F8,
+          "black-10": #00000061,
+          "black-20": #00000099,
+        )
+      )
+    )
+  )
+);
